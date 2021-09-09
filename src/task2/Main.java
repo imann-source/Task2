@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            File file1 = new File("src/task2/file1.txt");
+            File file1 = new File(args[0]);            //"src/task2/file1.txt"
             FileReader fr = new FileReader(file1);
 
             BufferedReader reader = new BufferedReader(fr);
@@ -32,7 +32,7 @@ public class Main {
                 line = reader.readLine();
             }
 
-            File file2 = new File("src/task2/file2.txt");
+            File file2 = new File(args[1]);         //"src/task2/file2.txt"
             FileReader fr2 = new FileReader(file2);
 
             BufferedReader reader2 = new BufferedReader(fr2);
